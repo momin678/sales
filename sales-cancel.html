@@ -25,6 +25,121 @@
   <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <style>
+    h1,h2,h3,h4,h5,h6{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        /*.container{*/
+        /*    width: 80%;*/
+        /*    margin-right: auto;*/
+        /*    margin-left: auto;*/
+        /*}*/
+        .brand-section{
+           background-color: #f4f6f9;
+           padding: 10px 40px;
+           border: 1px solid gray;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .col-6{
+            width: 50%;
+            flex: 0 0 auto;
+        }
+        .text-white{
+            color: black !important;
+        }
+        .body-section{
+            padding:16px;
+            border: 1px solid gray;
+        }
+        .heading{
+            font-size: 30px;
+            margin-bottom: 08px;
+        }
+        .heading.title{
+            font-size: 30px;
+            padding-left:25px;
+            text-align: center;
+            font-weight: 700;
+            margin-left:15px;
+        }
+        
+        .sub-heading{
+            color: #262626;
+            margin-bottom: 05px;
+        }
+        table{
+            background-color: #fff;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table thead tr{
+            border: 1px solid #111;
+            background-color: #f2f2f2;
+        }
+        table td {
+            vertical-align: middle !important;
+            /*text-align: center;*/
+            margin-left:15px;
+            padding-left: 20px;
+        }
+        table th{
+            text-align: center;
+        }
+        table th, table td {
+            padding-top: 08px;
+            padding-bottom: 08px;
+        }
+        .table-bordered{
+            box-shadow: 0px 0px 5px 0.5px gray;
+        }
+        .table-bordered td, .table-bordered th {
+            border: 1px solid #dee2e6;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .company-info{
+            border-right: 1px solid gray;
+            min-width:48%;
+            
+        }
+        .maxWidth{
+            min-width: 7px;
+            max-width: 7px;
+            padding-left: 3px;
+        }
+        .priceWidth{
+            min-width: 25px;
+            max-width: 25px;
+            padding-left: 10px;
+        }
+        .institution_name{
+            float: right;
+            text-align: right;
+        }
+        .company-details{
+            padding-top:10px;
+            float: right;
+            text-align: right;
+        }
+        .user-info{
+            padding-left:100px;
+            text-align: left;
+        }
+        .inWords{
+            text-align: left;
+            padding-left: 10px;
+            font-size: 20px;
+        }
+</style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -225,7 +340,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="brand-list.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Brand</small></p>
                 </a>
@@ -242,13 +357,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="new-sales.html" class="nav-link active">
+                <a href="new-sales.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>New Sale</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="sales-cancel.html" class="nav-link">
+                <a href="sales-cancel.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sales Cancel</p>
                 </a>
@@ -623,18 +738,17 @@
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
-        <div class="row">
+        <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Sales</h1>
+            <h1 class="m-0">Sales Cancel</h1>
           </div><!-- /.col -->
-          <div class="col-sm-6">
+          <!-- <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <a class="btn btn-primary btn-sm" href="#" data-toggle="modal" data-target="#exampleModal">
-                <i class="fas fa-plus"> New Customer</i>
+                <i class="fas fa-plus"> New Category</i>
               </a>
             </ol>
-          </div>
-          <!-- /.col -->
+          </div> --><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -643,220 +757,160 @@
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Product List</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body table-responsive p-2">                
-                <div class="form-group">
-                  <select class="form-control">
-                    <option>Product Select</option>
-                    <option>HP Desktop</option>
-                    <option>Dell Laptop</option>
-                  </select>
-                </div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Customer Information</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body table-responsive p-2">                
-                <div class="form-group">
-                  <select class="form-control">
-                    <option>Md Mominul</option>
-                    <option selected>Nirob</option>
-                  </select>
-                </div>
-              </div>
-              <!-- /.card-body -->
-            </div>
-            <div class="card p-4">
-              <div class="pb-2">
-                Name: <input type="text" name="" class="form-control">
-              </div>
-              <div class="pb-2">
-                Phone: <input type="text" name="" class="form-control">
-              </div>
-              <div class="pb-2">
-                Email: <input type="text" name="" class="form-control">
-              </div>
-              <div class="pb-2">
-                Address: <input type="text" name="" class="form-control">
-              </div>
-              <div class="pb-2">
-                Previous Due: <input type="number" name="" class="form-control">
+        <form >
+          <div class="row">
+            <div class="col-md-5">
+              <div class="form-group">
+                <select class="form-control">
+                  <option>Select Sales Order Numer</option>
+                  <option>DG-SO-101010</option>
+                  <option>DG-SO-101011</option>
+                  <option>DG-SO-101012</option>
+                </select>
               </div>
             </div>
-            <!-- /.card -->
+            <div class="col-md-5">
+              <div class="form-group">
+                <select class="form-control">
+                  <option>Select Invoice Numer </option>
+                  <option>DG-SO-101010</option>
+                  <option>DG-SO-101011</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="form-group">
+              <label></label>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </div>
           </div>
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-header">
-                <h5>Product Information</h5>
+        </form>
+      </div><!-- /.container-fluid -->
+    </section>
+    <section class="content pt-4">
+      <div class="container-fluid">            
+        <div class="container">
+          <div class="brand-section">
+              <div class="row">
+                  <div class="col-6">
+                      <img src="https://accounts.datagatebd.com/images/companyLogo.png" width="100">
+                  </div>
+                  <div class="col-6">
+                      <div class="company-details">
+                          <p class="text-white"><b>Date:</b> 24-Mar-2022</p>
+                          <p class="text-white"><b>Invoice/Bill Number:</b> DGQ-2022-09</p>
+                      </div>
+                  </div>
               </div>
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="pb-1">
-                      <label>Produt Name: </label>
-                      <input type="text" name="" class="form-control">
-                    </div>
-                    <div class="pb-1">
-                    <label>Produt Model: </label>
-                      <input type="text" name="" class="form-control">
-                    </div>
-                    <div class="pb-1">
-                    <label>Produt Category: </label>
-                      <input type="text" name="" class="form-control">
-                    </div>
-                    <div class="pb-1">
-                    <label>Produt Brand: </label>
-                      <input type="text" name="" class="form-control">
-                    </div>
+          </div>
+          <div class="body-section">
+            <div class="row">
+              <div class="company-info col-6">
+                  <p></p>
+                  <p>From: </p>
+                  <h2 class="heading">Data Gate</h2>
+                  <p class="sub-heading"><b>Phone:</b> 01744333320</p>
+                  <p class="sub-heading"><b>Email:</b> datagatebd@gmail.com </p>
+                  <p class="sub-heading"><b>Address:</b> Saleh Sadan (4th Floor) <br>145 Motijheel C/A, Dhaka - 1000</p>
+              </div>
+              <div class="institution_name col-6">
+                  <p class="">To: </p>
+                  <h2 class="heading user_institution">M Enterprise</h2>
+                  <div class="user-info">
+                      <p class="sub-heading"><b>Attention:</b> Mominul  </p>
+                      <p class="sub-heading"><b>Phone:</b> 01773786001</p>
+                      <p class="sub-heading"><b>Email:</b> mominul@gmail.com </p>
+                      <p class="sub-heading"><b>Address:</b> Motijheel, Dhaka. </p>
                   </div>
-                  <div class="col-md-4">
-                    <div class="pb-1">
-                    <label>Purches Price: </label>
-                      <input type="number" name="" class="form-control">
-                    </div>
-                    <div class="pb-1">
-                    <label>Unite Price: </label>
-                      <input type="number" name="" class="form-control">
-                    </div>
-                    <div class="pb-1">
-                    <label>Quantity: </label>
-                      <input type="text" name="" class="form-control">
-                    </div>
-                    <div class="pb-1">
-                    <label>Tex & Vat: </label>
-                      <input type="text" name="" class="form-control">
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="pb-1">
-                      <label>Produt SKU: </label>
-                      <input type="text" name="" class="form-control">
-                    </div>
-                    <div class="pb-1">
-                    <label>Produt Description: </label><br>
-                      <textarea rows="2" class="form-control"></textarea>
-                    </div>
-                    <div class="pb-1">
-                      <label>Photo</label>
-                      <img src="computer.jpg" width="100" height="100" class="ml-2">
-                    </div>
-                  </div>
-                  <button class="btn btn-primary btn-sm"><i class="fas fa-plus"> Add</i></button>
-                </div>
               </div>
             </div>
-            <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Product List</h3>
-              </div>
-              <!-- /.card-header -->
-              <div class="card-body table-responsive p-0">
-                <table class="table table-hover text-nowrap">
+          </div>
+          <div class="body-section">
+              <h3 class="heading  title">Invoice/Bill</h3>
+              <br>
+              <table class="table-bordered">
                   <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Name</th>
-                      <th>Quantity</th>
-                      <th>Unit Price</th>
-                      <th>Tex & Vat</th>
-                      <th>Amount</th>
-                      <th>Option</th>
-                    </tr>
+                      <tr>
+                          <th class="maxWidth">SN</th>
+                          <th class="pl-4">Product Name</th>
+                          <th class="maxWidth">Qty</th>
+                          <th class="maxWidth">MU</th>
+                          <th class="priceWidth">Unit Price</th>
+                          <th class="priceWidth">Total Price</th>
+                      </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td>HP Desktop</td>
+                      <td style="width:500px"><b>Avtech DG-205, 1080P TVI Bullet IR Camera</b> <br> • 1/2.7” CMOS Sensor• 1080P video output</td>
+                      <td>1</td>
+                      <td>box</td>
+                      <td>400</td>
+                      <td>400</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td style="width:500px"><b>Avtech DG-205, 1080P TVI Bullet IR Camera</b> <br> </td>
+                      <td>2</td>
+                      <td>pcs</td>
+                      <td>540</td>
+                      <td>1080</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td style="width:500px"><b>2 MP HDCVI camera Dahua DH-HAC-HFW1239TLMP-A-LED (3.6 мм)</b> <br> • Device Type :  surveillance camera</td>
+                      <td>2</td>
+                      <td>box</td>
+                      <td>2600.00</td>
+                      <td>5200</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td style="width:500px"><b>Avtech DG-205, 1080P TVI Bullet IR Camera</b> <br> </td>
                       <td>5</td>
+                      <td>pc</td>
+                      <td>200</td>
+                      <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td style="width:500px"><b>Avtech AVT – 452 2MP Bullet Camera</b> <br> </td>
+                        <td>1</td>
+                        <td>box</td>
+                        <td>150</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td style="width:500px"><b>Dahua Technology DH-HAC-HDW1200EMP 2 megapixel 1080P water-proof IR HDCVI dome camera</b> <br> </td>
+                      <td>5</td>
+                      <td>pc</td>
                       <td>550</td>
-                      <td>00</td>
                       <td>2750</td>
-                      <td>
-                        <a class="btn btn-danger btn-sm" href="#">
-                          <i class="fas fa-trash"></i>
-                        </a>
-                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="text-right pr-4"><b>Grand Total:</b> </td>
+                      <td class="priceWidth">TK.24295</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5" class="inWords"><b>IN WORDS: <span id="words">twenty four thousand two hundred and ninety five Tk only </span></b></td>
                     </tr>
                   </tbody>
-                  <tfoot>
-                    <tr>
-                      <td colspan="6">Sub-Total: </td>
-                      <td >TK.2750</td>
-                    </tr>
-                    <tr>
-                      <td colspan="5">Delivery Chare</td>
-                      <td colspan="2"> <input type="number" name="" value="150"></td>
-                    </tr>
-                    <tr>
-                      <td colspan="6">Grand Total:</td>
-                      <td>TK.2900</td>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
-              <!-- /.card-body -->
-            </div>
+              </table>
+          </div>
+          <div class="btn-group btn-group-sm d-print-none p-2"> 
+            <a href="javascript:window.print()" class="btn btn-secondary border text-black-50 shadow-none m-2"><i class="fa fa-print"></i> Print</a> 
+            <a href="https://accounts.datagatebd.com/admin/quotation-pdf/9" class="btn btn-secondary border text-black-50 shadow-none m-2"><i class="fa fa-download"></i> PDF</a>
+            <a href="https://accounts.datagatebd.com/admin/quotation-formate/9/edit" class="btn btn-secondary border text-black-50 shadow-none m-2"><i class="far fa-edit"></i> Edit</a>
+            <a href="https://accounts.datagatebd.com/admin/quotation-invoice/9" class="btn btn-secondary border text-black-50 shadow-none m-2"><i class="fa fa-receipt"></i> Invoice</a>
+            <a href="https://accounts.datagatebd.com/admin/quotation-challan/9" class="btn btn-secondary border text-black-50 shadow-none m-2"><i class="fas fa-file-invoice"></i> Challan</a>
           </div>
         </div>
-      </div><!-- /.container-fluid -->
+      </div>
+          <!-- /.container-fluid -->
     </section>
     <!-- /.content -->
-  </div>
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Add New Category</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label>Customer Name</label>
-              <input type="text" class="form-control" placeholder="Enter Customer Name">
-            </div>
-            <div class="form-group">
-              <label>Customer Email</label>
-              <input type="email" class="form-control" placeholder="Enter Customer Email">
-            </div>
-            <div class="form-group">
-              <label>Phone Number</label>
-              <input type="text" class="form-control" placeholder="Enter Customer Number">
-            </div>
-            <div class="form-group">
-              <label>Customer Address</label>
-              <input type="text" class="form-control" placeholder="Enter Customer Address">
-            </div>
-            <div class="form-group">
-              <label >Customer Profession</label>
-              <select class="form-control">
-                <option>Student</option>
-                <option>Bussiness</option>
-                <option>Employee</option>
-              </select>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
