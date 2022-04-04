@@ -27,115 +27,113 @@
   <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
   <style>
     h1,h2,h3,h4,h5,h6{
-            margin: 0;
-            padding: 0;
-        }
-        p{
-            margin: 0;
-            padding: 0;
-        }
-        /*.container{*/
-        /*    width: 80%;*/
-        /*    margin-right: auto;*/
-        /*    margin-left: auto;*/
-        /*}*/
-        .brand-section{
-           background-color: #f4f6f9;
-           padding: 10px 40px;
-           border: 1px solid gray;
-        }
-        .row{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .col-6{
-            width: 50%;
-            flex: 0 0 auto;
-        }
-        .text-white{
-            color: black !important;
-        }
-        .body-section{
-            padding:16px;
-            border: 1px solid gray;
-        }
-        .heading{
-            font-size: 30px;
-            margin-bottom: 08px;
-        }
-        .heading.title{
-            font-size: 20px;
-            text-align: center;
-            font-weight: 700;
-            background-color: #c9bebe;
-            padding: 10px;
-        }
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+    }
+    .brand-section{
+       background-color: #f4f6f9;
+       padding: 10px 40px;
+       border: 1px solid gray;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-6{
+        width: 50%;
+        flex: 0 0 auto;
+    }
+    .text-white{
+        color: black !important;
+    }
+    .body-section{
+        padding:16px;
+        border: 1px solid gray;
+    }
+    .heading{
+        font-size: 30px;
+        margin-bottom: 08px;
+    }
+    .heading.title{
+        font-size: 20px;
+        text-align: center;
+        font-weight: 700;
+        background-color: #c9bebe;
+        padding: 10px;
+    }
+    
+    .sub-heading{
+        color: #262626;
+        margin-bottom: 05px;
+    }
+    table{
+        background-color: #fff;
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table thead tr{
+        border-bottom: 1px solid #111;
+    }
+    table tbody tr td{
+      font-size: 15px;
+    } 
+    table td {
+        vertical-align: middle !important;
+        /*text-align: center;*/
+        margin-left:15px;
+        padding-left: 20px;
+    }
+    table th{
+        text-align: center;
+    }
+    table th, table td {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .table-bordered{
+        box-shadow: 0px 0px 5px 0.5px gray;
+    }
+    .table-bordered td, .table-bordered th {
+        border: 1px solid #dee2e6;
+    }
+    .text-right{
+        text-align: right;
+    }
+    .company-info{
+        border-right: 1px solid gray;
+        min-width:48%;
         
-        .sub-heading{
-            color: #262626;
-            margin-bottom: 05px;
-        }
-        table{
-            background-color: #fff;
-            width: 100%;
-            border-collapse: collapse;
-        }
-        table thead tr{
-            border-bottom: 1px solid #111;
-        }
-        table td {
-            vertical-align: middle !important;
-            /*text-align: center;*/
-            margin-left:15px;
-            padding-left: 20px;
-        }
-        table th{
-            text-align: center;
-        }
-        table th, table td {
-            padding-top: 08px;
-            padding-bottom: 08px;
-        }
-        .table-bordered{
-            box-shadow: 0px 0px 5px 0.5px gray;
-        }
-        .table-bordered td, .table-bordered th {
-            border: 1px solid #dee2e6;
-        }
-        .text-right{
-            text-align: right;
-        }
-        .company-info{
-            border-right: 1px solid gray;
-            min-width:48%;
-            
-        }
-        .maxWidth{
-            min-width: 7px;
-            max-width: 7px;
-            padding-left: 3px;
-        }
-        .priceWidth{
-            min-width: 25px;
-            max-width: 25px;
-            padding-left: 10px;
-        }
-        .institution_name{
-            float: right;
-            text-align: right;
-        }
-        .company-details{
-            text-align: center;
-        }
-        .user-info{
-            padding-left:100px;
-            text-align: left;
-        }
-        .inWords{
-            text-align: left;
-            padding-left: 10px;
-            font-size: 20px;
-        }
+    }
+    .maxWidth{
+        min-width: 7px;
+        max-width: 7px;
+        padding-left: 3px;
+    }
+    .priceWidth{
+        min-width: 25px;
+        max-width: 25px;
+        padding-left: 10px;
+    }
+    .institution_name{
+        float: right;
+        text-align: right;
+    }
+    .company-details{
+        text-align: center;
+    }
+    .user-info{
+        padding-left:100px;
+        text-align: left;
+    }
+    .inWords{
+        text-align: left;
+        padding-left: 10px;
+        font-size: 20px;
+    }
 </style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -378,7 +376,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="buyer-ledger.html" class="nav-link active">
+                <a href="buyer-ledger.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ledger</small></p>
                 </a>
@@ -390,7 +388,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="sales-report.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sales Report</p>
                 </a>
@@ -737,7 +735,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Buyer Ledger Report</h1>
+            <h1 class="m-0">Sales Report</h1>
           </div><!-- /.col -->
           <!-- <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -849,20 +847,16 @@
               </div>
           </div>
           <div class="body-section">
-              <h3 class="heading title">Buyer Ledger Report</h3>
+              <h3 class="heading title">Sales Report</h3>
               <table>
-                <div class="buyer-information m-2">
-                  <p><strong>Name: </strong> Md. Mominul</p>
-                  <p><strong>Address: </strong>Motijheel C/A, Dhaka - 1000</p>
-                </div>
                 <thead>
                   <tr>
                     <th>Date</th>
-                    <th>Particulars</th>
-                    <th></th>
-                    <th>Debit(TK)</th>
-                    <th>Credit(TK)</th>
-                    <th>Balance(TK)</th>
+                    <th>Buyer Name</th>
+                    <th>Product</th>
+                    <th>Brand</th>
+                    <th>Category</th>
+                    <th>Sale Price</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -913,6 +907,7 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
   <footer class="main-footer">
     <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
     All rights reserved.
