@@ -192,7 +192,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
                 Product
@@ -201,7 +201,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="product-add.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>New Product</p>
                 </a>
@@ -219,7 +219,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="category-list.html" class="nav-link active">
+                <a href="category-list.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Category</p>
                 </a>
@@ -260,13 +260,13 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="buyer-ledger.html" class="nav-link">
+                <a href="customer-list.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Customer</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="buyer-ledger.html" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ledger</small></p>
                 </a>
@@ -286,7 +286,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Purchase
@@ -295,7 +295,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="new-purches.html" class="nav-link">
+                <a href="new-purches.html" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>New Purchase</p>
                 </a>
@@ -623,17 +623,18 @@
     <!-- Content Header (Page header) -->
     <div class="content-header">
       <div class="container-fluid">
-        <div class="row mb-2">
+        <div class="row">
           <div class="col-sm-6">
-            <h1 class="m-0">Category</h1>
+            <h1 class="m-0">Purches</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <a class="btn btn-primary btn-sm" href="#" data-toggle="modal" data-target="#exampleModal">
-                <i class="fas fa-plus"> New Category</i>
+                <i class="fas fa-plus"> New Customer</i>
               </a>
             </ol>
-          </div><!-- /.col -->
+          </div>
+          <!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -643,22 +644,121 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-12">
+          <div class="col-md-4">
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Category List</h3>
-
-                <div class="card-tools">
-                  <div class="input-group input-group-sm" style="width: 250px;">
-                    <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
-
-                    <div class="input-group-append">
-                      <button type="submit" class="btn btn-default">
-                        <i class="fas fa-search"></i>
-                      </button>
+                <h3 class="card-title">Product List</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-2">                
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Product Select</option>
+                    <option>HP Desktop</option>
+                    <option>Dell Laptop</option>
+                  </select>
+                </div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Customer Information</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body table-responsive p-2">                
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Md Mominul</option>
+                    <option selected>Nirob</option>
+                  </select>
+                </div>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <div class="card p-4">
+              <div class="pb-2">
+                Name: <input type="text" name="" class="form-control">
+              </div>
+              <div class="pb-2">
+                Phone: <input type="text" name="" class="form-control">
+              </div>
+              <div class="pb-2">
+                Email: <input type="text" name="" class="form-control">
+              </div>
+              <div class="pb-2">
+                Address: <input type="text" name="" class="form-control">
+              </div>
+              <div class="pb-2">
+                Previous Due: <input type="number" name="" class="form-control">
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <h5>Product Information</h5>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="pb-1">
+                      <label>Produt Name: </label>
+                      <input type="text" name="" class="form-control">
+                    </div>
+                    <div class="pb-1">
+                    <label>Produt Model: </label>
+                      <input type="text" name="" class="form-control">
+                    </div>
+                    <div class="pb-1">
+                    <label>Produt Category: </label>
+                      <input type="text" name="" class="form-control">
+                    </div>
+                    <div class="pb-1">
+                    <label>Produt Brand: </label>
+                      <input type="text" name="" class="form-control">
                     </div>
                   </div>
+                  <div class="col-md-4">
+                    <div class="pb-1">
+                    <label>Purches Price: </label>
+                      <input type="number" name="" class="form-control">
+                    </div>
+                    <div class="pb-1">
+                    <label>Unite Price: </label>
+                      <input type="number" name="" class="form-control">
+                    </div>
+                    <div class="pb-1">
+                    <label>Quantity: </label>
+                      <input type="text" name="" class="form-control">
+                    </div>
+                    <div class="pb-1">
+                    <label>Tex & Vat: </label>
+                      <input type="text" name="" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="pb-1">
+                      <label>Produt SKU: </label>
+                      <input type="text" name="" class="form-control">
+                    </div>
+                    <div class="pb-1">
+                    <label>Produt Description: </label><br>
+                      <textarea rows="2" class="form-control"></textarea>
+                    </div>
+                    <div class="pb-1">
+                      <label>Photo</label>
+                      <img src="computer.jpg" width="100" height="100" class="ml-2">
+                    </div>
+                  </div>
+                  <button class="btn btn-primary btn-sm"><i class="fas fa-plus"> Add</i></button>
                 </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Product List</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body table-responsive p-0">
@@ -667,55 +767,46 @@
                     <tr>
                       <th>#</th>
                       <th>Name</th>
-                      <th>Parent Category</th>
-                      <th>Product Number</th>
-                      <th>Status</th>
+                      <th>Quantity</th>
+                      <th>Unit Price</th>
+                      <th>Tex & Vat</th>
+                      <th>Amount</th>
                       <th>Option</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td>Desktop</td>
-                      <td>-----</td>
-                      <td>100</td>
-                      <td>Active</td>
+                      <td>HP Desktop</td>
+                      <td>5</td>
+                      <td>550</td>
+                      <td>00</td>
+                      <td>2750</td>
                       <td>
-                        <a class="btn btn-primary btn-sm" href="#">
-                          <i class="fas fa-eye"></i>
-                        </a>
-                        <a class="btn btn-info btn-sm" href="#">
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
-                        <a class="btn btn-danger btn-sm" href="#">
-                          <i class="fas fa-trash"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Hp Desktop</td>
-                      <td>Dessktop</td>
-                      <td>22</td>
-                      <td>Pending</td>
-                      <td>
-                        <a class="btn btn-primary btn-sm" href="#">
-                          <i class="fas fa-eye"> </i>
-                        </a>
-                        <a class="btn btn-info btn-sm" href="#">
-                          <i class="fas fa-pencil-alt"></i>
-                        </a>
                         <a class="btn btn-danger btn-sm" href="#">
                           <i class="fas fa-trash"></i>
                         </a>
                       </td>
                     </tr>
                   </tbody>
+                  <tfoot>
+                    <tr>
+                      <td colspan="6">Sub-Total: </td>
+                      <td >TK.2750</td>
+                    </tr>
+                    <tr>
+                      <td colspan="5">Delivery Chare</td>
+                      <td colspan="2"> <input type="number" name="" value="150"></td>
+                    </tr>
+                    <tr>
+                      <td colspan="6">Grand Total:</td>
+                      <td>TK.2900</td>
+                    </tr>
+                  </tfoot>
                 </table>
               </div>
               <!-- /.card-body -->
             </div>
-            <!-- /.card -->
           </div>
         </div>
       </div><!-- /.container-fluid -->
@@ -734,16 +825,27 @@
         <div class="modal-body">
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">Category Name</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Category Name">
+              <label>Customer Name</label>
+              <input type="text" class="form-control" placeholder="Enter Customer Name">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Parent Category</label>
+              <label>Customer Email</label>
+              <input type="email" class="form-control" placeholder="Enter Customer Email">
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="text" class="form-control" placeholder="Enter Customer Number">
+            </div>
+            <div class="form-group">
+              <label>Customer Address</label>
+              <input type="text" class="form-control" placeholder="Enter Customer Address">
+            </div>
+            <div class="form-group">
+              <label >Customer Profession</label>
               <select class="form-control">
-                <option id="1">Computer</option>
-                <option id="1">Laptop</option>
-                <option id="1">Computer Accessories</option>
-                <option id="1">CCTV Camera</option>
+                <option>Student</option>
+                <option>Bussiness</option>
+                <option>Employee</option>
               </select>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
